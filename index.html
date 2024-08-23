@@ -78,7 +78,6 @@
       height: 1px;
       position: relative;
       vertical-align: middle;
-      width: 10%;
     }
     h2:before {
       right: 0.5em;
@@ -119,10 +118,6 @@
         padding: 0 15px;
       }
 
-      h2:after {
-        width: 10%;
-      }
-
       .service-style h3 {
         font-size: 1.2rem;
       }
@@ -149,6 +144,10 @@
     }
 
     @media (max-width: 576px) {
+      .background-header {
+        height: 450px;
+      }
+
       .jumbotron h1 {
         font-size: 2.5rem;
       }
@@ -231,10 +230,18 @@
           pemrograman dari tingkat dasar sampai mahir.
         </p>
         <p>
-          <a href="#" class="btn btn-primary btn-lg button-primer" role="button"
+          <a
+            href="#"
+            class="btn btn-primary btn-lg button-primer"
+            style="margin: 10px"
+            role="button"
             >Gabung Sekarang</a
           >
-          <a href="#" class="btn btn-secondary btn-lg" role="button"
+          <a
+            href="#"
+            class="btn btn-secondary btn-lg"
+            style="margin: 10px"
+            role="button"
             >Pelajari dulu</a
           >
         </p>
