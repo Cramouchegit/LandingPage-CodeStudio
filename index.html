@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Belajar pemrograman dari tingkat dasar sampai mahir dengan modul terupdate dan biaya terjangkau. Gabung sekarang di Code Studio."
+    />
+    <meta
+      name="keywords"
+      content="Belajar Pemrograman, Modul Pemrograman, Code Studio, Android Studio, Laravel, CodeIgniter, ReactJS"
+    />
+    <meta name="author" content="Code Studio" />
+    <meta property="og:url" content="https://portfolio-guntur.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <title>Code Studio - Solusi Terbaik Belajarmu</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      padding-top: 56px;
+    }
+    .jumbotron {
+      text-shadow: #000 1px 1px;
+    }
+    .background-header {
+      background-image: url("images/banner2.jpg");
+      background-color: #fafbfc;
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .button-primer {
+      background-color: #00bd8e;
+      border-color: #0b9b6b;
+      color: #fff;
+      text-shadow: 0px 0px;
+    }
+    .button-primer:hover {
+      background-color: #038c6a;
+      color: #fff;
+      text-shadow: 0px 0px;
+    }
+    .container-fluid-max {
+      max-width: 1440px;
+    }
+    .service-style {
+      margin-top: 15px;
+      background-color: #fafbfc;
+    }
+    .text-green {
+      color: #0b9b6b;
+    }
+    .bg-red {
+      background-color: #f25757;
+    }
+    .bg-red:hover {
+      background-color: #cc7373;
+    }
+    h2:before,
+    h2:after {
+      background-color: #0b9b6b;
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 25%;
+    }
+    h2:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+    h2:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+    .button-sekunder {
+      background-color: transparent;
+      border-color: #dbdbdb;
+      color: #0b9b6b;
+    }
+    .button-sekunder:hover {
+      background-color: #0b9b6b;
+      border-color: #dbdbdb;
+      color: #fff;
+    }
+    .cover {
+      background: no-repeat center/cover;
+    }
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .background-header {
+        height: 300px;
+      }
+
+      .jumbotron h1 {
+        font-size: 2.5rem;
+      }
+
+      .jumbotron p {
+        font-size: 1.3rem;
+      }
+
+      .service-style {
+        padding: 0 15px;
+      }
+
+      .service-style h3 {
+        font-size: 1.2rem;
+      }
+
+      .responsive-heading {
+        font-size: 30px;
+      }
+
+      .card {
+        margin-bottom: 2rem;
+      }
+
+      .card img {
+        height: auto;
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+      }
+
+      .card-text {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .jumbotron h1 {
+        font-size: 2.5rem;
+      }
+
+      .jumbotron p {
+        font-size: 1.1rem;
+        margin-top: 15px;
+      }
+
+      .service-style h3 {
+        font-size: 1rem;
+      }
+
+      .card-title {
+        font-size: 1.25rem;
+      }
+
+      .card-text {
+        font-size: 0.875rem;
+      }
+
+      .col-md-4 {
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <!--Navigasi Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="images/logo-codestudio.png"
+            style="width: 150px"
+            alt="Logo Code Studio"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Header-->
+    <section id="home" class="jumbotron jumbotron-fluid background-header">
+      <div class="container-fluid text-center">
+        <h1 class="display-3" style="color: aliceblue">
+          Solusi Terbaik Belajarmu
+        </h1>
+        <p class="lead" style="font-weight: bold; color: #fff">
+          Kami Menyediakan banyak modul yang kamu butuhkan untuk belajar
+          pemrograman dari tingkat dasar sampai mahir.
+        </p>
+        <p>
+          <a href="#" class="btn btn-primary btn-lg button-primer" role="button"
+            >Gabung Sekarang</a
+          >
+          <a href="#" class="btn btn-secondary btn-lg" role="button"
+            >Pelajari dulu</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!--Service-->
+    <section id="services" class="container-fluid service-style">
+      <div class="row text-center">
+        <div class="col-12 pb-4">
+          <h2
+            class="display-4 responsive-heading"
+            style="margin-top: 4rem !important"
+          >
+            Mengapa Memilih Kami?
+          </h2>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x"
+            ><i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-list fa-stack-1x text-white"></i
+          ></span>
+          <h3 class="mt-4 text-green responsive-heading">Fasilitas Terbaik</h3>
+          <p>
+            Fasilitas yang Kami sediakan sangat lengkap serta modul terupdate
+          </p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x"
+            ><i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-laptop-code fa-stack-1x text-white"></i
+          ></span>
+          <h3 class="mt-4 text-green">Modul Terupdate</h3>
+          <p>Lebih dari 1000 modul tersedia ditempat kami</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x"
+            ><i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-money-bill fa-stack-1x text-white"></i
+          ></span>
+          <h3 class="mt-4 text-green">Biaya Terjangkau</h3>
+          <p>Biaya yang Kami sediakan sangat terjangkau</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x"
+            ><i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-chart-line fa-stack-1x text-white"></i
+          ></span>
+          <h3 class="mt-4 text-green">Terarah dengan baik</h3>
+          <p>Sistem pembelajaran kami cukup terarah dan mudah</p>
+        </div>
+
+        <div class="col-12 pt-3 mb-5">
+          <a
+            class="btn text-white bg-red btn-lg"
+            target="_blank"
+            href="#"
+            role="button"
+            >Service Lainnya</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--Product-->
+    <section id="product" class="container">
+      <div class="row text-center">
+        <div class="col-12 pb-4">
+          <h2
+            class="display-4 text-center mb-5 responsive-heading"
+            style="margin-top: 5rem !important"
+          >
+            Produk Kami
+          </h2>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              style="max-height: 400px"
+              src="images/img1.jpg"
+              alt="Product 1"
+            />
+            <div class="card-body" style="min-height: 250px">
+              <h4 class="card-title">
+                Membuat Aplikasi Android Berbasis Lokasi dengan Android Studio
+              </h4>
+              <p class="card-text">
+                Belajar membuat aplikasi android (Kotlin) berbasis lokasi dengan
+                studi kasus aplikasi presensi digital
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn button-sekunder">Detail & Harga</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              style="max-height: 400px"
+              src="images/img2.jpg"
+              alt="Product 2"
+            />
+            <div class="card-body" style="min-height: 250px">
+              <h4 class="card-title">
+                Membuat Sistem Informasi Perpustakaan Menggunakan Laravel 6
+              </h4>
+              <p class="card-text">
+                Belajar langkah demi langkah membangun sistem informasi
+                perpustakaan dengan laravel 6
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn button-sekunder">Detail & Harga</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              style="max-height: 400px"
+              src="images/img3.jpg"
+              alt="Product 3"
+            />
+            <div class="card-body" style="min-height: 250px">
+              <h4 class="card-title">
+                Membuat Website Toko Online berbasis CodeIgniter
+              </h4>
+              <p class="card-text">
+                Belajar membangun website toko online menggunakan Framework PHP
+                codeigniter
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn button-sekunder">Detail & Harga</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              style="max-height: 400px"
+              src="images/img4.jpg"
+              alt="Product 4"
+            />
+            <div class="card-body" style="min-height: 250px">
+              <h4 class="card-title">
+                Membuat Web Kuliner menggunakan ReactJS
+              </h4>
+              <p class="card-text">
+                Belajar membuat Website kuliner menggunakan library JavaScript
+                ReactJS
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn button-sekunder">Detail & Harga</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--About-->
+    <section id="about" class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center pt-5">
+          <h2 class="display-4 responsive-heading">Tentang Kami</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-6 pt-3 pb-5">
+          <div class="col-12 col-sm-10 mx-auto">
+            <h4 class="text-muted">
+              Code Studio adalah tempat kursus online yang menyediakan berbagai
+              modul belajar pemrograman untuk meningkatkan keterampilan Anda.
+            </h4>
+            <p class="pt-3">
+              Meskipun peluangnya besar, bisnis di dunia coding juga memiliki
+              tantangan yang signifikan. Salah satu tantangan utama adalah
+              persaingan yang ketat. Dengan banyaknya pengembang dan perusahaan
+              yang menawarkan layanan serupa, penting untuk memiliki keunikan,
+              kualitas tinggi, dan portofolio yang solid untuk menonjol di
+              pasar. Selain itu, perkembangan teknologi yang cepat juga menjadi
+              tantangan tersendiri. Developer harus terus-menerus memperbarui
+              keterampilan mereka dan mengikuti tren terbaru untuk tetap
+              relevan. Ini membutuhkan investasi waktu dan energi yang
+              signifikan, terutama bagi pengembang yang bekerja secara mandiri.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="col-12">
+            <img
+              src="images/banner2.jpg"
+              class="img-fluid cover"
+              alt="Tentang Code Studio"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact" class="container-fluid bg-light pt-5 pb-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="display-4 responsive-heading">Hubungi Kami</h2>
+          <p class="text-muted">
+            Untuk informasi lebih lanjut, silakan hubungi kami melalui kontak
+            berikut.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 text-center pt-3">
+          <i class="fas fa-phone fa-2x text-green"></i>
+          <p class="pt-3">(+62) 123-4567</p>
+        </div>
+        <div class="col-12 col-md-6 text-center pt-3">
+          <i class="fas fa-envelope fa-2x text-green"></i>
+          <p class="pt-3">info@codestudio.com</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-dark">
+      <div class="col-lg-12" style="padding: 10px">
+        <div style="text-align: center">
+          <a href="#" class="text-light" style="padding: 5px"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="#" class="text-light" style="padding: 5px"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="text-light" style="padding: 5px"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p class="text-center text-secondary">
+          Copyright &copy; Code Studio 2024
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/2400e03b89.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
